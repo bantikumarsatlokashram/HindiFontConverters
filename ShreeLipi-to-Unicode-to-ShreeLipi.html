@@ -1,0 +1,58 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function convert_to_unicode(){var e=new Array("u","\u00AA","}","n","p","H","\u00B7","I","\u00BB","J","\u00BD","K","M","\u00C0","N","\u00B5O","O","\u00B5\u00C1","\u00C1","P","Q","R","\u00B6S","S","\u00B6T","T","U","\u00CA","W","\u00CF","V","\u00CB","Y","\u00DC","X","Z","\u00DD","\\\\","\u00E2","[","\u00DF","^","\u00E4","]","\u00E3","_","\u00E5","`","a","c","\u00EB","d","\u00EC","e","\u00FB","\u00ED","f","\u00EE","g","\u00F1","h","j","\u00FA","k","\u00D4","\u00DB","\u00DA","\u00E0","\u00DE","Q\u00AD","\u00BA$","\u00CC","\u00D0","\u00D5","l","\u00CEm","\u00B8","\u201E","\u02C6","\u0153","\u00C5","Am\u00A1","Am{","Am|","Am","A","B\u00A9","B","C","D","E{","E","F","m\u00B0","m{","m|","{","|","m\u00A1","m\u00A2","\u00A1","\u00A2","m","r","s","t","w","\u00FE","y","\u00A7","\u00B1","\u2022","\u00A5","\u00B2","\u00D1","\u00AB","\u00E9","\u00EA","&","$",">","\u00B5"),t=new Array("\u00A9","\u00A9\u0902","{\u00A9","o","o","\u0915","\u0915\u094D\u200C","\u0916","\u0916\u094D\u200C","\u0917","\u0917\u094D","\u0918","\u091A","\u091A\u094D\u200C","\u091B","\u095B","\u091C","\u095B\u094D\u200C","\u091C\u094D\u200C","\u091D","\u091F","\u0920","\u095C","\u0921","\u095D","\u0922","\u0923","\u0923\u094D","\u0925","\u0925\u094D","\u0924","\u0924\u094D","\u0927","\u0927\u094D","\u0926","\u0928","\u0928\u094D","\u092B","\u092B\u094D\u200C","\u092A","\u092A\u094D\u200C","\u092D","\u092D\u094D","\u092C","\u092C\u094D\u200C","\u092E","\u092E\u094D","\u092F","\u0930","\u0932","\u0932\u094D\u200C","\u0935","\u0935\u094D\u200C","\u0936","\u0936\u094D","\u0936\u094D","\u0937","\u0937\u094D\u200C","\u0938","\u0938\u094D","\u0939","\u0915\u094D\u0937","\u0915\u094D\u0937\u094D","\u091C\u094D\u091E","\u0926\u094D\u0926","\u0926\u094D\u0935","\u0926\u094D\u092F","\u092A\u094D\u0930","\u0928\u094D\u0928","\u091F\u094D\u0930","\u0915\u094D\u0924","\u0924\u094D\u0930","\u0926\u094D\u0930","\u0926\u094D\u0927","\u0936\u094D\u0930","\u0924\u094D\u0924","\u0915\u094D\u0915","\u0932\u094D\u0932","\u0939\u094D\u0935","\u0936\u094D\u0935","\u091F\u094D\u091F","\u0914","\u0913","\u0913\u0902","\u0906","\u0905","\u0908","\u0907","\u0909","\u090A","\u0910","\u090F","\u090B","\u0949","\u094B","\u094B\u0902","\u0947","\u0947\u0902","\u094C","\u094C\u0902","\u0948","\u0948\u0902","\u093E","\u0940","\u0940","\u0940\u0902","\u0941","\u0941","\u0942","\u0902","\u0901","\u0903","\u0943","\u094D\u200C","\u0926\u0943","\u094D\u0930","\u0930\u0941","\u0930\u0942","\u0964","","",""),r=e.length;document.getElementById("unicode_text").value="You have chosen SIMPLE TEXT  in ShreeLipi font to convert into Unicode. /n Conversion in progress..";for(var o=document.getElementById("legacy_text").value,n=document.getElementById("legacy_text").value.length,a="",i=0,l=0,_=1;1==_;){if(i=l,l<n-6e3)for(l+=6e3;" "!=document.getElementById("legacy_text").value.charAt(l);)l--;else l=n,_=0;o=document.getElementById("legacy_text").value.substring(i,l),c();a=a+o;document.getElementById("unicode_text").value=a}function c(){if(""!=o){for(input_symbol_idx=0;input_symbol_idx<r;input_symbol_idx++)for(indx=0;-1!=indx;)o=o.replace(e[input_symbol_idx],t[input_symbol_idx]),indx=o.indexOf(e[input_symbol_idx]);for(var n=o.indexOf("o");-1!=n;){var a="o"+(l=o.charAt(n+1));n=(o=o.replace(a,l+"\u093F")).search(/o/,n+1)}for(var i=o.indexOf("\u093F\u094D");-1!=i;){a="\u093F\u094D"+(_=o.charAt(i+2));i=(o=o.replace(a,"\u094D"+_+"\u093F")).search(/\u093F\u094D/,i+2)}for(n=o.indexOf("q");-1!=n;){var l;a="q"+(l=o.charAt(n+1));n=(o=o.replace(a,l+"o")).search(/q/,n+1)}for(i=o.indexOf("o\u094D");-1!=i;){var _;a="o\u094D"+(_=o.charAt(i+2));i=(o=o.replace(a,"\u094D"+_+"\u093F\u0902")).search(/o\u094D/,i+3)}o=o.replace(/o/g,"\u093F\u0902"),set_of_matras="\u093E\u093F\u0940\u0941\u0942\u0943\u0947\u0948\u094B\u094C\u0902\u0903\u0901\u0945";for(var c=o.indexOf("\u00A9");c>0;){probable_position_of_half_r=c-1;for(var d=o.charAt(probable_position_of_half_r);null!=set_of_matras.match(d);)probable_position_of_half_r-=1,d=o.charAt(probable_position_of_half_r);a=o.substr(probable_position_of_half_r,c-probable_position_of_half_r),new_replacement_string="\u0930\u094D"+a,a+="\u00A9",c=(o=o.replace(a,new_replacement_string)).indexOf("\u00A9")}}}}function Convert_to_ShreeLipi(){for(var e=new Array("u","\u00AA","}","n","p","H","\u00B7","I","\u00BB","J","\u00BD","K","M","\u00C0","N","\u00B5O","O","\u00B5\u00C1","\u00C1","P","Q","R","\u00B6S","S","\u00B6T","T","U","\u00CA","W","\u00CF","V","\u00CB","Y","\u00DC","X","Z","\u00DD","\\\\","\u00E2","[","\u00DF","^","\u00E4","]","\u00E3","_","\u00E5","`","a","c","\u00EB","d","\u00EC","e","\u00FB","\u00ED","f","\u00EE","g","\u00F1","h","j","\u00FA","k","\u00D4","\u00DB","\u00DA","\u00E0","\u00DE","Q\u00AD","\u00BA$","\u00CC","\u00D0","\u00D5","l","\u00CEm","\u00B8","\u201E","\u02C6","\u0153","\u00C5","Am\u00A1","Am{","Am|","Am","A","B\u00A9","B","C","D","E{","E","F","m\u00B0","m{","m|","{","|","m\u00A1","m\u00A2","\u00A1","\u00A2","m","r","s","t","w","\u00FE","y","\u00A7","\u00B1","\u2022","\u00A5","\u00B2","\u00D1","\u00AB","\u00E9","\u00EA","&"),t=new Array("\u00A9","\u00A9\u0902","{\u00A9","o","o","\u0915","\u0915\u094D\u200C","\u0916","\u0916\u094D\u200C","\u0917","\u0917\u094D","\u0918","\u091A","\u091A\u094D\u200C","\u091B","\u095B","\u091C","\u095B\u094D\u200C","\u091C\u094D\u200C","\u091D","\u091F","\u0920","\u095C","\u0921","\u095D","\u0922","\u0923","\u0923\u094D","\u0925","\u0925\u094D","\u0924","\u0924\u094D","\u0927","\u0927\u094D","\u0926","\u0928","\u0928\u094D","\u092B","\u092B\u094D\u200C","\u092A","\u092A\u094D\u200C","\u092D","\u092D\u094D","\u092C","\u092C\u094D\u200C","\u092E","\u092E\u094D","\u092F","\u0930","\u0932","\u0932\u094D\u200C","\u0935","\u0935\u094D\u200C","\u0936","\u0936\u094D","\u0936\u094D","\u0937","\u0937\u094D\u200C","\u0938","\u0938\u094D","\u0939","\u0915\u094D\u0937","\u0915\u094D\u0937\u094D","\u091C\u094D\u091E","\u0926\u094D\u0926","\u0926\u094D\u0935","\u0926\u094D\u092F","\u092A\u094D\u0930","\u0928\u094D\u0928","\u091F\u094D\u0930","\u0915\u094D\u0924","\u0924\u094D\u0930","\u0926\u094D\u0930","\u0926\u094D\u0927","\u0936\u094D\u0930","\u0924\u094D\u0924","\u0915\u094D\u0915","\u0932\u094D\u0932","\u0939\u094D\u0935","\u0936\u094D\u0935","\u091F\u094D\u091F","\u0914","\u0913","\u0913\u0902","\u0906","\u0905","\u0908","\u0907","\u0909","\u090A","\u0910","\u090F","\u090B","\u0949","\u094B","\u094B\u0902","\u0947","\u0947\u0902","\u094C","\u094C\u0902","\u0948","\u0948\u0902","\u093E","\u0940","\u0940","\u0940\u0902","\u0941","\u0941","\u0942","\u0902","\u0901","\u0903","\u0943","\u094D\u200C","\u0926\u0943","\u094D\u0930","\u0930\u0941","\u0930\u0942","\u0964"),r=(e.length,t.length),o=document.getElementById("unicode_text").value,n=document.getElementById("unicode_text").value.length,a="",i=0,l=0,_=1;1==_;){if(i=l,l<n-6e3)for(l+=6e3;" "!=document.getElementById("unicode_text").value.charAt(l);)l--;else l=n,_=0;o=document.getElementById("unicode_text").value.substring(i,l),c();a=a+o;document.getElementById("legacy_text").value=a}function c(){for(var n=(o="  "+o).indexOf("\u093F\u0902");-1!=n;){var a=(o=o.replace("\u093F\u0902","q")).charAt(n-1);for(o=o.replace(a+"q","q"+a),n-=1;"\u094D"==o.charAt(n-1)&0!=n;){var i=o.charAt(n-2)+"\u094D";o=o.replace(i+"q","q"+i),n-=2}n=o.search(/\u093F\u0902/,n+1)}for(n=o.indexOf("\u093F");-1!=n;){a=o.charAt(n-1);for(o=o.replace(a+"\u093F","o"+a),n-=1;"\u094D"==o.charAt(n-1)&0!=n;){i=o.charAt(n-2)+"\u094D";o=o.replace(i+"o","o"+i),n-=2}n=o.search(/\u093F/,n+1)}set_of_matras="\u093E\u093F\u0940\u0941\u0942\u0943\u0947\u0948\u094B\u094C\u0902:\u0901\u0945";for(var l=(o+="  ").indexOf("\u0930\u094D");l>0;){if("\u094D"!=o.charAt(l+3))var _=l+2;else _=l+4;for(var c=o.charAt(_+1);-1!=set_of_matras.indexOf(c);)_+=1,c=o.charAt(_+1);i=o.substr(l+2,_-l-1),l=(o=o.replace("\u0930\u094D"+i,i+"\u00A9")).indexOf("\u0930\u094D")}if(""!=(o=o.substr(0,o.length-2)))for(input_symbol_idx=r-1;input_symbol_idx>0;input_symbol_idx--)for(indx=0;-1!=indx;)o=o.replace(t[input_symbol_idx],e[input_symbol_idx]),indx=o.indexOf(t[input_symbol_idx])}}
+</script>
+<style>
+textarea {
+ width: 100%;
+ padding: 5px 5px;
+ margin: 8px 0;
+ box-sizing: border-box;
+}
+input[type=button] {
+ width: 100%;
+ background-color: #EC7513;
+ color: white;
+ padding: 14px 20px;
+ margin: 8px 0;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+input[type=button]:hover {
+ background-color: #CC6611;
+}
+body {
+ align: middle;
+ border-radius: 5px;
+ background-color: #f2f2f2;
+ padding: 20px;
+}
+</style>
+</head>
+<!-- ----------------------------------------------------------------------------------
+      body of the HTML starts here. one text box is provided each for input and output. 
+-->
+
+<body>
+<form name="form1">
+  <br />
+  <b>ShreeLipi</b> font text-box<br />
+  <textarea cols="80" id="legacy_text" name="ShreeLipi_text" rows="8"></textarea>
+  <br />
+  <div align="middle">
+    <input accesskey="c" id="converter1" name="converter" onclick="convert_to_unicode();" title="श&#2377;र&#2381;टकट alt+c" type="button" value=" Convert to Unicode &gt;&gt; " />
+  </div>
+<br />
+  <b>Unicode</b> text-box<br />
+  <textarea cols="84" id="unicode_text" name="unicode_text" rows="11"></textarea>
+  <br />
+  <div align="middle">
+ <input accesskey="c" id="converter2" name="converter" onclick="Convert_to_ShreeLipi();" type="button" value=" Convert to ShreeLipi &gt;&gt; " />
+</div>
+<br />
+</form>
+</body>
+</html>
