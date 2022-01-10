@@ -1,0 +1,56 @@
+<html>
+<head>
+<script type="text/javascript">
+function convert_to_unicode(){var a=new Array("\u00F6","+","#\u00AA","$\u00AA","Z=","F=","N","X","8","\u00C9","\u00C5","T=","3","6","\u00E1","o","O","k>:",">","M","k]:","k:0","ku:","kU:","k&:","ke:","k:","k","K","g","G","V","c","%","j","z","!","@","#","$","[","t","q","d","Q","n","p","f:","f","b","B","m","y","r","D","l","v","x","{","s","h","a=E","a=e","a=C","a=","a","w*","w","W","~","Ae","A","=E","=e","=","<","\u094D\u093E","I","u","U","&","e","E","]\\\\","]","/","C","\u00EE","\u00E2","\u00E4","\u00E0","\u00E5","\u00E7","\u00EA","\u00EB","\u00E8","\u00EF","\u094D\u094B","\u094D\u094C","\u0902\u0947","\u0902\u0942","\u0901\u0942"),e=new Array("\u0950","\u0964","\u095C","\u095D","\u0915\u094D\u0937","\u0924\u094D\u0930","\u091C\u094D\u091E","\u0936\u094D\u0930","\u0926\u094D\u0935","\u0939\u094D\u092E","\u0939\u0943","\u0924\u094D\u0924","\u0926\u094D\u0927","\u0926\u094D\u092F","\u0928\u094D\u0928","\u0930\u0941","\u0930\u0942","\u0915\u094D\u0930","\u094D\u0930","\u094D\u0930","\u0915\u0902","\u0915\u0940","\u0915\u0941","\u0915\u0942","\u0915\u0943","\u0915\u0947","\u0915","\u0915\u094D","\u0916\u094D","\u0917\u094D","\u0918\u094D","\u0919","\u091A\u094D","\u091B","\u091C\u094D","\u091D\u094D","\u091F","\u0920","\u0921","\u0922","\u0923\u094D","\u0924\u094D","\u0925\u094D","\u0926","\u0927\u094D","\u0928\u094D","\u092A\u094D","\u092B","\u092B\u094D","\u092C\u094D","\u092D\u094D","\u092E\u094D","\u092F\u094D","\u0930","\u0932\u094D","\u0932","\u0935\u094D","\u0936\u094D","\u0937\u094D","\u0938\u094D","\u0939","\u0914","\u0913","\u0911","\u0906","\u0905","\u0908","\u0907","\u0909","\u090A","\u0910","\u090F","\u094C","\u094B","\u093E","\u094D","","\u0940","\u0941","\u0942","\u0943","\u0947","\u0948","\u0901","\u0902","\u0903","\u093D","\u0966","\u0967","\u0968","\u0969","\u096A","\u096B","\u096C","\u096D","\u096E","\u096F","\u0947","\u0948","\u0947\u0902","\u0942\u0902","\u0942\u0901"),r=a.length,i=document.getElementById("legacy_text").value;!function(){if(""!=i){for(input_symbol_idx=0;input_symbol_idx<r;input_symbol_idx++)for(idx=0;-1!=idx;)i=i.replace(a[input_symbol_idx],e[input_symbol_idx]),idx=i.indexOf(a[input_symbol_idx]);for(var t=i.indexOf("i");-1!=t;){var o=i.charAt(t+1),l="i"+o;i=i.replace(l,o+"\u093F"),t=i.search(/i/,t+1)}for(var _=i.indexOf("\u093F\u094D");-1!=_;){var n=i.charAt(_+2),l="\u093F\u094D"+n;i=i.replace(l,"\u094D"+n+"\u093F"),_=i.search(/\u093F\u094D/,_+2)}for(var _=i.indexOf("\u093F\u0902\u094D");-1!=_;){var n=i.charAt(_+3),l="\u093F\u0902\u094D"+n;i=i.replace(l,"\u094D"+n+"\u093F\u0902"),_=i.search(/\u093F\u0902\u094D/,_+3)}set_of_matras="\u093E \u093F \u0940 \u0941 \u0942 \u0943 \u0947 \u0948 \u094B \u094C \u0902 : \u0901 \u0945";for(var c=i.indexOf("*");c>0;){probable_position_of_half_r=c-1;for(var p=i.charAt(probable_position_of_half_r);null!=set_of_matras.match(p);)probable_position_of_half_r-=1,p=i.charAt(probable_position_of_half_r);l=i.substr(probable_position_of_half_r,c-probable_position_of_half_r),new_replacement_string="\u0930\u094D"+l,l+="*",i=i.replace(l,new_replacement_string),c=i.indexOf("*")}}}(),processed_text=i,document.getElementById("unicode_text").value=processed_text}function convert_to_Gita1(){var a=new Array("\u0915\u093C","\u0916\u093C","\u0917\u093C","\u091C\u093C","\u0921\u093C","\u0922\u093C","\u092B\u093C","!",".","\u0964",";","(",")","{","}","[","]","/","<","=",">",",","+","*","%","\u0959\u094D","\u0959","\u095E\u094D","\u095E","\u0950","?","\u091C\u094D\u091E","\u0939\u094D\u092F","\u0939\u0943","\u091F\u094D\u091F","\u0924\u094D\u0924\u094D","\u0915\u094D\u0924","\u0936\u094D\u0930","\u0926\u094D\u092F","\u0926\u094D\u0935","\u0926\u094D\u0926","\u0926\u094D\u0927","\u0915\u094D\u0937\u094D","\u0915\u094D\u0937","\u0920\u094D\u0920","\u0924\u094D\u0930","\u0939\u094D\u0930","\u091C\u093F","\u0915\u094D\u0930\u0941","\u0915\u094D\u0930\u0942","\u094D\u0930\u0941","\u094D\u0930\u0942","\u0930\u0942","\u0930\u0941","\u0915\u094D\u0930","\u0915\u0943","\u092B\u094D\u0930","\u092B\u0943","\u095C","\u095D","\u091F\u094D\u0930","\u0921\u094D\u0930","\u0922\u094D\u0930","\u094D\u0930","\u0958","\u095A","\u095B\u094D","\u0915\u094D","\u0915","\u0916\u094D","\u0916","\u0917\u094D","\u0917","\u0918\u094D","\u0918","\u0919","\u091A\u094D","\u091A","\u091B","\u095B","\u091C\u094D","\u091C","\u091D\u094D","\u091D","\u091E\u094D","\u091E","\u091F","\u0920","\u0921","\u0922","\u0923\u094D","\u0923","\u0924\u094D","\u0924","\u0925\u094D","\u0925","\u0926","\u0927\u094D","\u0927","\u0928\u094D","\u0928","\u092A\u094D","\u092A","\u092B\u094D","\u092B","\u092C\u094D","\u092C","\u092D\u094D","\u092D","\u092E\u094D","\u092E","\u092F\u094D","\u092F","\u0930","\u0932\u094D","\u0932","\u0933","\u0935\u094D","\u0935","\u0936\u094D","\u0936","\u0937\u094D","\u0937","\u0938\u094D","\u0938","\u0939\u094D","\u0939","\u0914","\u0913","\u0911","\u0906","\u0905","\u0908","\u0908","\u0907","\u0909","\u090A","\u090B","\u090C","\u0910","\u090F","\u094C","\u094B","\u0949","\u093E","\u0940","\u0941","\u0942","\u0943","\u0947","\u0948","\u0901","\u0902",":","\u0903","\u094D","\u0945","\u093D","\u093C"),e=new Array("\u0958","\u0959","\u095A","\u095B","\u095C","\u095D","\u095E","\u00D1","\u00BA",".","\u00C2","\u00B3","\u00B4","\u00A1","\u00A3","\u00A4","\u00A5","\u00C0","\u00C3","\u00C4","\u00C5","\u00B8","\u2020","\u00B5","\u2030","K,","\u00D3","F,","\u00D4","!","\u00C6","&","(",")","+","<",">","Ea","V","W","_","w","x","xa","{","~","\u0153","\u0178","\u00CBu","\u00CBu","`u","`U","$","\u00C9","\u00CB","\u00CC","\u00CD","\u00CE","D,","Z,","T/","D/","Z/","`","k,","ga,","j,","@","k","#","K","g","ga","G","Ga","=","c","ca","C","ja,","j","ja","J","Ja","H","Ha","T","z","D","Z","N","Na","%","t","q","qa","d","Q","Qa","n","na","P","p","F","f","b","ba","B","Ba","m","ma","y","ya","r","l","la","L","v","va","S","Sa","Y","Ya","s","sa","*","h","AaO","Aao","Aa^","Aa","A","\u0161","[-","[","]","}","?",";","eo","e","aO","ao","a^","a","I","u","U","R","o","O","\u00D0","M","\u00C1",":","\\\\","^","|",","),r=a.length,i=document.getElementById("unicode_text").value;!function(){if(""!=i){for(var t=i.indexOf("\u093F");-1!=t;){var o=i.charAt(t-1);for(i=i.replace(o+"\u093F","i"+o),t-=1;"\u094D"==i.charAt(t-1)&0!=t;){var l=i.charAt(t-2)+"\u094D";i=i.replace(l+"i","i"+l),t-=2}t=i.search(/\u093F/,t+1)}set_of_matras="\u093E\u093F\u0940\u0941\u0942\u0943\u0947\u0948\u094B\u094C\u0902:\u0901\u0945";for(var _=(i=(i=(i+="  ").replace(/-/g,"\u00B9")).replace(/\u0936\u094D\u0930\u094D/g,"E")).indexOf("\u0930\u094D");_>0;){for(var n=_+2,c=i.charAt(n);null!=set_of_matras.match(c);)n+=1,c=i.charAt(n);var p=n+1;if(p>0)for(var f=i.charAt(p);null!="\u094D".match(f);)n=p+1,c=i.charAt(n),p=n+1,f=i.charAt(p);l=i.substr(_+2,n-_-1),i=i.replace("\u0930\u094D"+l,l+"-"),_=i.indexOf("\u0930\u094D")}for(i=i.substr(0,i.length-2),input_symbol_idx=0;input_symbol_idx<r;input_symbol_idx++)for(idx=0;-1!=idx;)i=i.replace(a[input_symbol_idx],e[input_symbol_idx]),idx=i.indexOf(a[input_symbol_idx])}i=(i=(i=(i=(i=(i=(i=(i=(i=(i=(i=(i=(i=(i=i.replace(/-ao/g,"ao-")).replace(/-a/g,"a-")).replace(/-I/g,"I-")).replace(/\\ -/g,"-")).replace(/ki,/g,"ik,")).replace(/Ki,/g,"i\u00D3")).replace(/gai,/g,"iga,")).replace(/fi,/g,"i\u00D4")).replace(/Di,/g,"iD,")).replace(/Zi,/g,"iZ,")).replace(/jai,/g,"ija,")).replace(/nai,/g,"ina,")).replace(/ri,/g,"ir,")).replace(/Li,/g,"iL,")}(),processed_text=i,document.getElementById("legacy_text").value=processed_text}
+</script>
+<style>
+textarea {
+ width: 100%;
+ padding: 5px 5px;
+ margin: 8px 0;
+ box-sizing: border-box;
+}
+input[type=button] {
+ width: 100%;
+ background-color: #EC7513;
+ color: white;
+ padding: 14px 20px;
+ margin: 8px 0;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+input[type=button]:hover {
+ background-color: #CC6611;
+}
+body {
+ align: middle;
+ border-radius: 5px;
+ background-color: #f2f2f2;
+ padding: 20px;
+}
+</style>
+</head>
+
+<!-- ----------------------------------------------------------------------------------
+      body of the HTML starts here. one text box is provided each for input and output. 
+-->
+
+<body>
+<form name="form1">
+  <b>Gita1 font text-box </b><br />
+  <textarea cols="92" id="legacy_text" name="TextToConvert" rows="6"></textarea>
+  <br />
+  <div align="middle">
+    <input accesskey="c" id="converter" name="converter" onclick="convert_to_unicode();" title="श&#2377;र&#2381;टकट alt+c" type="button" value=" Convert to Unicode &gt;&gt; " />
+  </div>
+<br />
+  <b> Unicode text-box</b> <br />
+  <textarea cols="92" id="unicode_text" name="ConvertedText" rows="6"></textarea>
+  <br />
+  <div align="middle">
+    <input accesskey="c" id="converter" name="converter" onclick="convert_to_Gita1();" type="button" value=" Convert to Gita1 &gt;&gt; " />
+  </div>
+</form>
+</body>
+</html>
